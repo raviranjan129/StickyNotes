@@ -38,7 +38,7 @@ const Notes = (props) => {
     <>
     
       <div className="flex flex-col bg-purple-500 h-[280px] w-[260px] p-[25px] rounded-xl m-5  " style={{backgroundColor:props.notes.color}}  >
-        <textarea onChange={(e)=>updateText(e.target.value,props.notes.id)} className="flex basis-[75%] bg-transparent border-none outline-none resize-none  " defaultValue={props.notes.text} />
+        <textarea onChange={(event)=>updateText(eevnet.target.value,props.notes.id)} className="flex basis-[75%] bg-transparent border-none outline-none resize-none  " defaultValue={props.notes.text} />
        <div className='flex items-center justify-between'>
        <p>{formatDate(props.notes.time)}</p>
        <img className='h-10 cursor-pointer' src={DeleteImage} alt="delete" onClick={()=>props.deleteNote(props.notes.id)} />
